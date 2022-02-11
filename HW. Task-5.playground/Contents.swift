@@ -11,3 +11,16 @@ import UIKit
 //===========================================================================================================================
 
 // Решение
+
+func isContain(string: String, symbol: Character) -> Int {
+    var letterSum = 0
+    
+    for letter in string {
+        if letter == symbol {
+            letterSum += 1
+        }
+    }
+    return letterSum
+}
+
+print("Встречается:", isContain(string: "Privet ", symbol: " "), "раз.")
