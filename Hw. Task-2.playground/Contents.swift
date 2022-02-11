@@ -12,3 +12,13 @@ import UIKit
 //===========================================================================================================================
 
 // Решение
+
+func isPalindrom(input:String) -> Bool {
+    let lowerCased = input.lowercased()
+    
+    return String(lowerCased.reversed()) == lowerCased
+}
+
+//isPalindrom(input: "А роза упала на лапу Азора")
+//isPalindrom(input: "АрозаупаланалапуАзора")
+//isPalindrom(input: "казак")
