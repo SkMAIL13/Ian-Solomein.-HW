@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 /*
         8 Task. Ian Solomein
@@ -10,3 +11,15 @@ import UIKit
 //===========================================================================================================================
 // Решение
 
+func rotationString(string1: String, string2: String ) -> Bool {
+    if string1.count == string2.count {
+        true
+    } else {
+        return false
+    }
+    let mixed = string1 + string1
+    
+    return mixed.contains(string1)
+}
+
+rotationString(string1: "Swifto", string2: "towfiS")
