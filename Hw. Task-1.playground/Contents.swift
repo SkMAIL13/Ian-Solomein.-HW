@@ -1,3 +1,5 @@
 import UIKit
 
-var greeting = "Hello, playground"
+/*
+        1 Task. Ian Solomein
+*/
