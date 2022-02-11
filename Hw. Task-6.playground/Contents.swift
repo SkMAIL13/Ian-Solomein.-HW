@@ -11,3 +11,18 @@ import UIKit
 //===========================================================================================================================
 
 // Решение
+
+
+func delSameSymbol (input: String) -> String {
+    var sameSymbolString = [Character]()
+    
+    for letter in input {
+        if !sameSymbolString.contains(letter){
+            sameSymbolString.append(letter)
+        }
+    }
+    return String(sameSymbolString)
+}
+
+delSameSymbol(input: "OLLEEEE!, LALALA")
+
